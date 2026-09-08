@@ -1,0 +1,16 @@
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencias
+node_modules/

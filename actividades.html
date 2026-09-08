@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividades | Huerta Comunitaria de Hayuelos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="img/logo.png" alt="Logo Huerta Hayuelos">
+        <span class="brand-text">Huerta Comunitaria<br>de Hayuelos</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#sobre-nosotros">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./actividades.html">Actividades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav-unete" href="./contacto.html">Únete</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="min-height: 45vh;">
+    <img class="hero-bg" src="img/huerta2.webp" alt="Actividades de la huerta">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Actividades y jornadas</h1>
+      <p>Talleres, cultivos comunitarios y eventos abiertos a toda la comunidad</p>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS + CARDS -->
+  <section class="que-hacemos section-padding">
+    <div class="container">
+      <div class="row">
+
+        <!-- SIDEBAR -->
+        <div class="col-12 col-md-3 mb-4">
+          <h5 class="mb-3" style="color: var(--cafe);">Categorías</h5>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Compostaje</a>
+            <a href="#" class="list-group-item">Talleres</a>
+            <a href="#" class="list-group-item">Jornadas de siembra</a>
+            <a href="#" class="list-group-item">Cosechas</a>
+            <a href="#" class="list-group-item">Mercado campesino</a>
+          </div>
+        </div>
+
+        <!-- CONTENIDO -->
+        <div class="col-12 col-md-9">
+          <div class="row">
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img src="img/huerta.webp" class="card-img-top" alt="Jornada de siembra">
+                <div class="card-body">
+                  <h5 class="card-title">Jornada de siembra <span class="badge bg-success">Próximo</span></h5>
+                  <p class="card-text">Ven a preparar la tierra y sembrar hortalizas de temporada junto a toda la
+                    comunidad. No necesitas experiencia.</p>
+                  <a href="./contacto.html" class="btn-huerta">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img src="img/compost.png" class="card-img-top" alt="Taller de compostaje"
+                  style="object-fit: contain; padding: 30px; background: #fdf6ea;">
+                <div class="card-body">
+                  <h5 class="card-title">Taller de compostaje <span class="badge bg-success">Nuevo</span></h5>
+                  <p class="card-text">Aprende a transformar los residuos orgánicos en abono natural para nuestras
+                    huertas.</p>
+                  <a href="./contacto.html" class="btn-huerta">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img src="img/abejas.png" class="card-img-top" alt="Taller de apicultura"
+                  style="object-fit: contain; padding: 30px; background: #fdf6ea;">
+                <div class="card-body">
+                  <h5 class="card-title">Taller de apicultura <span class="badge bg-success">Nuevo</span></h5>
+                  <p class="card-text">Aprende sobre el cuidado de las abejas y su importancia para la polinización
+                    del huerto.</p>
+                  <a href="./contacto.html" class="btn-huerta">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img src="img/huerta4.webp" class="card-img-top" alt="Cosecha colectiva">
+                <div class="card-body">
+                  <h5 class="card-title">Cosecha colectiva <span class="badge bg-success">Nuevo</span></h5>
+                  <p class="card-text">Participa en la recolección de la cosecha y llévate productos frescos directo
+                    de la huerta.</p>
+                  <a href="./contacto.html" class="btn-huerta">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img src="img/circular.png" class="card-img-top" alt="Economía circular"
+                  style="object-fit: contain; padding: 30px; background: #fdf6ea;">
+                <div class="card-body">
+                  <h5 class="card-title">Jornada de reciclaje <span class="badge bg-warning text-dark">Mensual</span></h5>
+                  <p class="card-text">Jornada para clasificar y reutilizar los residuos de la comunidad y cerrar el
+                    ciclo de los recursos.</p>
+                  <a href="./contacto.html" class="btn-huerta">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img src="img/huerta.webp" class="card-img-top" alt="Día de puertas abiertas">
+                <div class="card-body">
+                  <h5 class="card-title">Día de puertas abiertas <span class="badge bg-success">Nuevo</span></h5>
+                  <p class="card-text">Ven a conocer la huerta, conoce a los vecinos y descubre todas las formas de
+                    participar.</p>
+                  <a href="./contacto.html" class="btn-huerta">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDARIO -->
+  <section class="about-section section-padding">
+    <div class="container">
+      <h2 class="section-title">Calendario de la huerta</h2>
+      <hr class="section-divider">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <table class="table table-hover table-bordered align-middle text-center">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Actividad</th>
+                <th>Hora</th>
+                <th>Lugar</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>15 de septiembre</td>
+                <td>Jornada de siembra</td>
+                <td>8:00 am</td>
+                <td>Campos de Hayuelos</td>
+                <td><span class="badge bg-success">Abierta</span></td>
+              </tr>
+              <tr>
+                <td>22 de septiembre</td>
+                <td>Taller de compostaje</td>
+                <td>9:00 am</td>
+                <td>Casa comunal</td>
+                <td><span class="badge bg-warning text-dark">Pocos cupos</span></td>
+              </tr>
+              <tr>
+                <td>29 de septiembre</td>
+                <td>Mercado campesino</td>
+                <td>7:00 am</td>
+                <td>Plaza de la vereda</td>
+                <td><span class="badge bg-success">Abierta</span></td>
+              </tr>
+              <tr>
+                <td>06 de octubre</td>
+                <td>Cosecha colectiva</td>
+                <td>8:00 am</td>
+                <td>Campos de Hayuelos</td>
+                <td><span class="badge bg-danger">Por confirmar</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="map-section">
+    <div class="container">
+      <h2 class="section-title">Encuéntranos</h2>
+      <hr class="section-divider">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="mapa-contenedor">
+            <iframe
+              src="https://www.google.com/maps?q=Huerta%20Comunitaria%20Hayuelos&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="footer-brand">
+            <img src="img/logo.png" alt="Logo Huerta Hayuelos">
+            Huerta Comunitaria de Hayuelos
+          </h5>
+          <p>Cultivando comunidad y cosechando vida en la vereda de Hayuelos.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Enlaces</h5>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./index.html#sobre-nosotros">Sobre nosotros</a></li>
+            <li><a href="./actividades.html">Actividades</a></li>
+            <li><a href="./galeria.html">Galería</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Redes</h5>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Ubicación</h5>
+          <p class="footer-ubicacion">📍 Vereda de Hayuelos, Colombia</p>
+          <div class="footer-mapa">
+            <iframe
+              src="https://www.google.com/maps?q=Huerta%20Comunitaria%20Hayuelos&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Huerta Comunitaria de Hayuelos · Hecho con 🌱 para la comunidad
+      <br>
+      <span class="footer-credit">Iconos de <a href="https://www.flaticon.es/" target="_blank" rel="noopener">Flaticon</a></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

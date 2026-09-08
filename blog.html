@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contáctenos | Huerta Comunitaria de Hayuelos</title>
+  <title>Blog | Huerta Comunitaria de Hayuelos</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -43,10 +43,10 @@
             <a class="nav-link" href="./galeria.html">Galería</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./blog.html">Blog</a>
+            <a class="nav-link active" aria-current="page" href="./blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+            <a class="nav-link" href="./contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
             <a class="nav-link btn-nav-unete" href="./contacto.html">Únete</a>
@@ -58,99 +58,61 @@
 
   <!-- HERO -->
   <section class="hero" style="min-height: 45vh;">
-    <img class="hero-bg" src="img/huerta4.webp" alt="Contacto con la huerta">
+    <img class="hero-bg" src="img/huerta3.webp" alt="Blog de la huerta">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Contáctenos</h1>
-      <p>Escúbenos y sé parte de la Huerta Comunitaria de Hayuelos</p>
+      <h1>Blog</h1>
+      <p>Historias, aprendizajes y noticias de nuestra huerta comunitaria</p>
     </div>
   </section>
 
-  <!-- FORMULARIO -->
-  <section class="form-section section-padding">
+  <!-- ENTRADAS -->
+  <section class="que-hacemos section-padding">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          <form>
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre completo</label>
-              <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+      <div class="row">
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="img/compost.png" class="card-img-top" alt="Compostaje" style="object-fit: contain; padding: 30px; background: #fdf6ea;">
+            <div class="card-body">
+              <h5 class="card-title">¿Cómo hacemos nuestro compost?</h5>
+              <p class="card-text">Te contamos cómo transformamos los residuos orgánicos de la comunidad en abono
+                rico en nutrientes para recuperar nuestro suelo.</p>
+              <span class="badge bg-warning text-dark">Aprendizaje</span>
             </div>
-
-            <div class="mb-3">
-              <label for="correo" class="form-label">Correo electrónico</label>
-              <input type="email" id="correo" class="form-control" placeholder="tucorreo@ejemplo.com" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="telefono" class="form-label">Teléfono</label>
-              <input type="tel" id="telefono" class="form-control" placeholder="321 000 0000">
-            </div>
-
-            <div class="mb-3">
-              <label for="interes" class="form-label">¿En qué te interesa participar?</label>
-              <select id="interes" class="form-select">
-                <option selected>Selecciona una opción</option>
-                <option>Jornadas de siembra</option>
-                <option>Talleres</option>
-                <option>Cosechas colectivas</option>
-                <option>Mercado campesino</option>
-                <option>Compostaje</option>
-                <option>Voluntariado</option>
-                <option>Otro</option>
-              </select>
-            </div>
-
-            <div class="mb-3">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea id="mensaje" class="form-control" rows="4"
-                placeholder="Cuéntanos cómo quieres participar..."></textarea>
-            </div>
-
-            <button type="submit" class="btn-huerta w-100">
-              Enviar mensaje
-            </button>
-          </form>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INFORMACIÓN DE CONTACTO -->
-  <section class="about-section">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-4 mb-4">
-          <h5 style="color: var(--cafe); font-family: 'Edu VIC WA NT Hand', cursive;">📍 Ubicación</h5>
-          <p>Vereda de Hayuelos, Colombia</p>
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="img/abejas.png" class="card-img-top" alt="Abejas" style="object-fit: contain; padding: 30px; background: #fdf6ea;">
+            <div class="card-body">
+              <h5 class="card-title">Las abejas, nuestras mejores aliadas</h5>
+              <p class="card-text">La importancia de los polinizadores en la huerta y cómo cuidamos a las abejas
+                para que el ecosistema se mantenga en equilibrio.</p>
+              <span class="badge bg-warning text-dark">Biodiversidad</span>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h5 style="color: var(--cafe); font-family: 'Edu VIC WA NT Hand', cursive;">📞 Teléfono</h5>
-          <p>+57 300 000 0000</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5 style="color: var(--cafe); font-family: 'Edu VIC WA NT Hand', cursive;">✉️ Correo</h5>
-          <p>huertahayuelos@ejemplo.com</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MAPA -->
-  <section class="map-section">
-    <div class="container">
-      <h2 class="section-title">Encuéntranos</h2>
-      <hr class="section-divider">
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="mapa-contenedor">
-            <iframe
-              src="https://www.google.com/maps?q=Huerta%20Comunitaria%20Hayuelos&output=embed"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
-            </iframe>
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="img/huerta3.webp" class="card-img-top" alt="Recuperación del suelo">
+            <div class="card-body">
+              <h5 class="card-title">Recuperando nuestro suelo</h5>
+              <p class="card-text">Un recorrido por las técnicas agroecológicas que usamos para devolverle la vida
+                a la tierra de Hayuelos.</p>
+              <span class="badge bg-warning text-dark">Suelo</span>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="about-section section-padding">
+    <div class="container text-center">
+      <h2 class="section-title">¿Quieres escribir en el blog?</h2>
+      <p class="section-subtitle">Comparte tus aprendizajes y experiencias con la comunidad.</p>
+      <a href="./contacto.html" class="btn-cafe">Contáctenos</a>
     </div>
   </section>
 
