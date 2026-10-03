@@ -21,7 +21,7 @@
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">
-        <img src="img/logo.png" alt="Logo Huerta Hayuelos">
+        <img src="img/icons/logo.png" alt="Logo Huerta Hayuelos">
         <span class="brand-text">Huerta Comunitaria<br>de Hayuelos</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -67,47 +67,316 @@
   <!-- GALERÍA -->
   <section class="que-hacemos section-padding">
     <div class="container">
-      <div class="row">
-        <div class="col-6 col-md-4 mb-3">
-          <div class="gallery-item">
-            <img src="img/huerta.webp" alt="Fotografía de la huerta">
+
+      <ul class="nav nav-pills galeria-tabs justify-content-center mb-4" id="galeriaTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pestana-espacio-tab" data-bs-toggle="pill"
+            data-bs-target="#pestana-espacio" type="button" role="tab" aria-controls="pestana-espacio"
+            aria-selected="true">🌱 Espacio de Huerta</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pestana-actividades-tab" data-bs-toggle="pill"
+            data-bs-target="#pestana-actividades" type="button" role="tab" aria-controls="pestana-actividades"
+            aria-selected="false">📸 Actividades pasadas</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="galeriaContenido">
+
+        <!-- ESPACIO DE HUERTA -->
+        <div class="tab-pane fade show active" id="pestana-espacio" role="tabpanel"
+          aria-labelledby="pestana-espacio-tab">
+          <div class="row">
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/espacios1.jpeg" alt="Espacio de la huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/espacios2.jpeg" alt="Cultivos de la huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/espacios3.jpeg" alt="Vereda de la huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/espacios4.jpeg" alt="Huerta y comunidad">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/espacios5.jpeg" alt="Paisaje de la huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/espacioshuerta.jpeg" alt="Espacios de la huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/espacioshuerta2.jpeg" alt="Espacios de la huerta 2">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/huerta.webp" alt="Vista de la huerta comunitaria">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/huerta2.webp" alt="Cultivos del espacio de huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/huerta3.webp" alt="Nuestra huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/huerta4.webp" alt="Huerta y entorno">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/abejas.webp" alt="Las abejas de la huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/mariposas.jpg" alt="Mariposas de la huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/panoleta.jpg" alt="Panoleta del espacio de huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/senorahuerta.jpg" alt="La señora de la huerta">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+              <div class="gallery-item">
+                <img src="img/actividadesmujeres.jpeg" alt="Mujeres en las actividades de la huerta">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-6 col-md-4 mb-3">
-          <div class="gallery-item">
-            <img src="img/huerta2.webp" alt="Fotografía de la huerta">
+
+        <!-- ACTIVIDADES PASADAS -->
+        <div class="tab-pane fade" id="pestana-actividades" role="tabpanel"
+          aria-labelledby="pestana-actividades-tab">
+          <div class="row">
+
+            <!-- MINGA DE JULIO -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100 carrusel-actividad">
+                <div id="carruselMingaJulio" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/minga-julio/compartir.jpg" class="d-block w-100" alt="Compartiendo en la minga de julio">
+                      <div class="carousel-caption d-none d-md-block"><p>Compartiendo en la minga</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/minga-julio/minga1.jpeg" class="d-block w-100" alt="Minga de julio preparando la tierra">
+                      <div class="carousel-caption d-none d-md-block"><p>Preparando la tierra</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/minga-julio/minga2.jpeg" class="d-block w-100" alt="Trabajo en equipo en la minga">
+                      <div class="carousel-caption d-none d-md-block"><p>Trabajo en equipo</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/minga-julio/minga3.jpeg" class="d-block w-100" alt="Aprendiendo juntos en la minga">
+                      <div class="carousel-caption d-none d-md-block"><p>Aprendiendo juntos</p></div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carruselMingaJulio"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carruselMingaJulio"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Minga de julio</h5>
+                  <p class="card-text">Trabajo comunitario de siembra y cuidado de la huerta: vecinos y vecinas
+                    uniendo manos para preparar la tierra.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- MINGA DE AGOSTO -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100 carrusel-actividad">
+                <div id="carruselMingaAgosto" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/minga-agosto/minga1.jpeg" class="d-block w-100" alt="Minga de agosto">
+                      <div class="carousel-caption d-none d-md-block"><p>Minga de agosto</p></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Minga de agosto</h5>
+                  <p class="card-text">Nueva jornada de la minga: convivimos, compartimos y seguimos construyendo
+                    huerta entre todos.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- OLIMPIADAS · HUERTA A FUEGO -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100 carrusel-actividad">
+                <div id="carruselOlimpiadas" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Olimpiadas-huerta-fuego-septiembre/domo.jpg" class="d-block w-100" alt="El domo comunitario">
+                      <div class="carousel-caption d-none d-md-block"><p>El domo comunitario</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Olimpiadas-huerta-fuego-septiembre/huerta1.jpeg" class="d-block w-100" alt="La huerta a fuego en septiembre">
+                      <div class="carousel-caption d-none d-md-block"><p>La huerta a fuego</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Olimpiadas-huerta-fuego-septiembre/olimpiada.jpeg" class="d-block w-100" alt="Las olimpiadas de la huerta">
+                      <div class="carousel-caption d-none d-md-block"><p>Olimpiadas de la huerta</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Olimpiadas-huerta-fuego-septiembre/olla.jpg" class="d-block w-100" alt="La olla comunitaria">
+                      <div class="carousel-caption d-none d-md-block"><p>La olla comunitaria</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Olimpiadas-huerta-fuego-septiembre/olla2.jpg" class="d-block w-100" alt="Compartiendo la olla">
+                      <div class="carousel-caption d-none d-md-block"><p>Compartiendo la olla</p></div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carruselOlimpiadas"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carruselOlimpiadas"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Olimpiadas · Huerta a fuego</h5>
+                  <p class="card-text">Cierre de temporada a puro calor: la olla comunitaria, el domo y las
+                    olimpiadas de la huerta.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- COSECHAS -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100 carrusel-actividad">
+                <div id="carruselCosechas" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/cosechas/cosecha1.jpeg" class="d-block w-100" alt="Cosecha en la huerta">
+                      <div class="carousel-caption d-none d-md-block"><p>La cosecha del día</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cosechas/cosecha12.jpeg" class="d-block w-100" alt="Cosecha de temporada">
+                      <div class="carousel-caption d-none d-md-block"><p>Cosecha de temporada</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cosechas/cosecha13.jpeg" class="d-block w-100" alt="Frutos de la tierra">
+                      <div class="carousel-caption d-none d-md-block"><p>Frutos de la tierra</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cosechas/cosecha14.jpeg" class="d-block w-100" alt="Compartiendo la cosecha">
+                      <div class="carousel-caption d-none d-md-block"><p>Compartiendo la cosecha</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cosechas/cosecha17.jpeg" class="d-block w-100" alt="Cosecha comunitaria">
+                      <div class="carousel-caption d-none d-md-block"><p>Cosecha comunitaria</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cosechas/cosechas.jpg" class="d-block w-100" alt="Nuestra cosecha">
+                      <div class="carousel-caption d-none d-md-block"><p>Nuestra cosecha</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cosechas/cosechas15.jpeg" class="d-block w-100" alt="Cosechas de la temporada">
+                      <div class="carousel-caption d-none d-md-block"><p>La cosecha compartida</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cosechas/cosechas16.jpeg" class="d-block w-100" alt="Recogiendo los frutos">
+                      <div class="carousel-caption d-none d-md-block"><p>Recogiendo los frutos</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cosechas/yacon.jpeg" class="d-block w-100" alt="Yacón de la huerta">
+                      <div class="carousel-caption d-none d-md-block"><p>El yacón de la vereda</p></div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carruselCosechas"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carruselCosechas"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Cosechas</h5>
+                  <p class="card-text">Los frutos de nuestro trabajo: cosechas colectivas y el yacón de la
+                    vereda.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- COMPOSTAJE -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="card h-100 carrusel-actividad">
+                <div id="carruselCompostaje" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/compost/compost2.jpeg" class="d-block w-100" alt="Compostera de la huerta">
+                      <div class="carousel-caption d-none d-md-block"><p>Compostera de la huerta</p></div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/compost/compostbalde.jpeg" class="d-block w-100" alt="Nuestra compostera">
+                      <div class="carousel-caption d-none d-md-block"><p>El ciclo del compost</p></div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carruselCompostaje"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carruselCompostaje"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Compostaje</h5>
+                  <p class="card-text">De los residuos al abono: nuestras composteras transformando la materia
+                    orgánica en nutrientes.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div class="col-6 col-md-4 mb-3">
-          <div class="gallery-item">
-            <img src="img/huerta3.webp" alt="Fotografía de la huerta">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 mb-3">
-          <div class="gallery-item">
-            <img src="img/huerta4.webp" alt="Fotografía de la huerta">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 mb-3">
-          <div class="gallery-item">
-            <img src="img/actividades.webp" alt="Fotografía de la huerta">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 mb-3">
-          <div class="gallery-item">
-            <img src="img/abejas.webp" alt="Las abejas de la huerta">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 mb-3">
-          <div class="gallery-item">
-            <img src="img/cosechas.webp" alt="Cosechas de la huerta">
-          </div>
-        </div>
-        <div class="col-6 col-md-4 mb-3">
-          <div class="gallery-item">
-            <img src="img/huerteoseptiembre.webp" alt="La huerta en septiembre">
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -127,7 +396,7 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-4">
           <h5 class="footer-brand">
-            <img src="img/logo.png" alt="Logo Huerta Hayuelos">
+            <img src="img/icons/logo.png" alt="Logo Huerta Hayuelos">
             Huerta Comunitaria de Hayuelos
           </h5>
           <p>Cultivando comunidad y cosechando vida en la vereda de Hayuelos.</p>

@@ -124,7 +124,7 @@ python -m http.server 8000
 
 **Hecho con 🌱 y mucho amor por la comunidad de Hayuelos**
 
-<img src="img/logo.png" alt="Logo Huerta Comunitaria de Hayuelos" width="80" style="border-radius: 50%;">
+<img src="img/icons/logo.png" alt="Logo Huerta Comunitaria de Hayuelos" width="80" style="border-radius: 50%;">
 
 *Iconos por [Flaticon](https://www.flaticon.es/)*
 
