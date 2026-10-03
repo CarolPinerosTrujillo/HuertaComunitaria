@@ -35,6 +35,10 @@
   --negro-suave: #33271e;
   --gris-texto: #6b5f53;
   --fondo-crema: #faf3e7;
+
+  /* Rojos (aviso / no agregar) */
+  --rojo: #c0392b;
+  --rojo-suave: #f9e4e1;
 }
 
 /* ---------------------------------
@@ -926,5 +930,142 @@ footer .footer-mapa iframe {
 
   .navbar-nav .nav-link.active:hover {
     background-color: rgba(245, 179, 1, 0.18);
+  }
+}
+
+/* ==============================
+   GUÍA DE COMPOSTAJE
+   ============================== */
+
+/* Contenedor de la infografía con hotspots */
+.infografia-hots {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background-color: var(--blanco);
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.infografia-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Marcadores (hotspots) sobre la infografía */
+.paso-hotspot {
+  position: absolute;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: linear-gradient(135deg, var(--verde-500), var(--verde-700));
+  color: var(--blanco);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  animation: invita-clic 2.2s ease-in-out infinite;
+}
+
+/* Animación suave que invita a hacer clic */
+@keyframes invita-clic {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(90, 143, 74, 0.5), 0 4px 10px rgba(0, 0, 0, 0.35);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.12);
+    box-shadow: 0 0 0 10px rgba(90, 143, 74, 0), 0 4px 14px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.paso-hotspot:hover,
+.paso-hotspot:focus-visible {
+  animation: none;
+  transform: translate(-50%, -50%) scale(1.15);
+  box-shadow: 0 0 0 6px rgba(90, 143, 74, 0.5), 0 4px 10px rgba(0, 0, 0, 0.35);
+  outline: none;
+}
+
+.paso-hotspot.activo {
+  background: linear-gradient(135deg, var(--verde-700), #2f5428);
+  box-shadow: 0 0 0 6px rgba(63, 107, 54, 0.35), 0 4px 10px rgba(0, 0, 0, 0.35);
+  animation: none;
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+/* Modal de pasos */
+.paso-modal-img,
+.infografia-modal-img {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.paso-modal-img {
+  max-height: 70vh;
+}
+
+.infografia-modal-img {
+  max-height: 72vh;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards enlazadas (blog) */
+.card-enlace {
+  display: block;
+  cursor: pointer;
+  color: var(--negro-suave);
+}
+
+.card-enlace h5 {
+  color: var(--verde-oscuro);
+}
+
+/* Responsive de la guía */
+@media (max-width: 991px) {
+  .paso-hotspot {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .paso-hotspot {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .paso-modal-img {
+    max-height: 55vh;
+  }
+
+  .infografia-modal-img {
+    max-height: 60vh;
+  }
+}
+
+/* Se respeta la preferencia de menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .paso-hotspot {
+    animation: none;
+    transition: none;
   }
 }
