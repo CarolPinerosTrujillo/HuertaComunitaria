@@ -1069,3 +1069,39 @@ footer .footer-mapa iframe {
     transition: none;
   }
 }
+
+/* ==============================
+   SWEETALERT2 · FORMULARIO DE CONTACTO
+   ============================== */
+.swal2-popup {
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 16px;
+  background: var(--blanco);
+  color: var(--negro-suave);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 1.6rem 1.4rem;
+}
+
+.swal2-title {
+  font-family: 'Edu VIC WA NT Hand', cursive;
+  color: var(--cafe);
+  font-size: 1.7rem;
+}
+
+.swal2-confirm {
+  background: linear-gradient(135deg, var(--verde-500), var(--verde-700)) !important;
+  border-radius: 25px !important;
+  padding: 10px 30px !important;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(63, 107, 54, 0.35) !important;
+}
+
+.swal2-confirm:hover {
+  transform: translateY(-2px);
+}
+
+.swal2-icon {
+  border-radius: 50%;
+}
