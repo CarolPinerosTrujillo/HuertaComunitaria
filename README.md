@@ -21,7 +21,7 @@
 
 Este es el sitio web de la **Huerta Comunitaria de Hayuelos**, un **proyecto social** donde un grupo de vecinos se une con un propósito compartido: **tratar sus residuos, recuperar el suelo y aprovecharlos para cuidar la tierra**.
 
-Fomentamos el **compostaje**, el **uso responsable de los recursos** y el **aprendizaje conjunto** sobre agricultura y huertas comunitarias. La página es el escaparate digital de este movimiento: presenta quiénes somos, qué hacemos, nuestras actividades, una galería de momentos, una guía interactiva de compostaje paso a paso, un blog y un formulario para unirse.
+Fomentamos el **compostaje**, el **uso responsable de los recursos** y el **aprendizaje conjunto** sobre agricultura y huertas comunitarias. La página es el escaparate digital de este movimiento: presenta quiénes somos, qué hacemos, nuestras actividades, una galería de momentos, una guía interactiva de compostaje paso a paso y un formulario para unirse.
 
 > 💛 *No solo cultivamos alimentos... cultivamos comunidad.*
 
@@ -29,15 +29,14 @@ Fomentamos el **compostaje**, el **uso responsable de los recursos** y el **apre
 
 ## 🧭 Secciones del sitio
 
-El menú (presente en todas las páginas) es: **Inicio · Sobre nosotros · Actividades · Galería · Compostaje · Blog** + botón **Únete** que lleva al formulario.
+El menú (presente en todas las páginas) es: **Inicio · Sobre nosotros · Actividades · Galería · Compostaje** + botón **Únete** que lleva al formulario.
 
 | Página | Descripción |
 |--------|-------------|
 | 🏠 **Inicio** | Landing: ¿qué hacemos?, sobre nosotros, galería, preguntas frecuentes y mapa |
 | 🌾 **Actividades** | Jornadas de siembra, talleres, cosechas y calendario de la huerta |
-| 📸 **Galería** | Fotos y emoticones que retratan la vida de la huerta |
+| 📸 **Galería** | Dos pestañas: "Espacio de Huerta" (fotos) y "Actividades pasadas" (carruseles de cada jornada, que avanzan al pasar el mouse) |
 | 🧫 **Compostaje** | Guía interactiva: infografía con burbujas que abren cada paso o residuo en grande |
-| 📝 **Blog** | Historias y aprendizajes de la comunidad |
 | ✉️ **Contacto** | Formulario funcional (envía correos) + mapa de ubicación |
 
 ---
