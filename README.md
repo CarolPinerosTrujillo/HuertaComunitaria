@@ -29,15 +29,16 @@ Fomentamos el **compostaje**, el **uso responsable de los recursos** y el **apre
 
 ## 🧭 Secciones del sitio
 
+El menú (presente en todas las páginas) es: **Inicio · Sobre nosotros · Actividades · Galería · Compostaje · Blog** + botón **Únete** que lleva al formulario.
+
 | Página | Descripción |
 |--------|-------------|
-| 🏠 **Inicio** | Landing con hero, ¿qué hacemos?, sobre nosotros, galería, preguntas frecuentes y mapa |
+| 🏠 **Inicio** | Landing: ¿qué hacemos?, sobre nosotros, galería, preguntas frecuentes y mapa |
 | 🌾 **Actividades** | Jornadas de siembra, talleres, cosechas y calendario de la huerta |
 | 📸 **Galería** | Fotos y emoticones que retratan la vida de la huerta |
-| 🧫 **Compostaje** | Guía interactiva: infografía con burbujas por paso que abren cada imagen en grande |
+| 🧫 **Compostaje** | Guía interactiva: infografía con burbujas que abren cada paso o residuo en grande |
 | 📝 **Blog** | Historias y aprendizajes de la comunidad |
-| ✉️ **Contacto** | Formulario para unirse y participar |
-| 💛 **Únete** | Llamado a la acción para sumarse al proyecto |
+| ✉️ **Contacto** | Formulario funcional (envía correos) + mapa de ubicación |
 
 ---
 
@@ -46,7 +47,9 @@ Fomentamos el **compostaje**, el **uso responsable de los recursos** y el **apre
 - **HTML5** — estructura semántica de las páginas
 - **CSS3** — estilos, paleta de colores y diseño responsive
 - **Bootstrap 5.3** — componentes (navbar, cards, carousel, accordion, tablas, formularios)
-- **JavaScript** — componentes de Bootstrap e interactividad de la guía de compostaje (hotspots y modales)
+- **JavaScript** — componentes de Bootstrap, interactividad de la guía de compostaje (hotspots y modales) y envío del formulario de contacto
+- **FormSubmit** — backend del formulario de contacto para recibir los mensajes por correo
+- **SweetAlert2** — alertas de confirmación y errores con la paleta del sitio
 - **Google Fonts** — tipografías *Edu VIC WA NT Hand* (títulos) y *Quicksand* (texto)
 - **WebP** — imágenes optimizadas (infografías, pasos y fotos de la galería)
 - **Flaticon** — emoticones e iconos de la sección "¿Qué hacemos?"
@@ -67,13 +70,13 @@ Pensamos en los colores de la tierra:
 
 ## ⏳ Pendientes por implementar
 
-- [ ] **Backend del formulario de contacto** — actualmente es solo visual; conectar con un servicio de correo/WhatsApp.
+- [x] **Formulario de contacto funcional** — envía los mensajes por correo vía FormSubmit, con validación, honeypot antispam y alertas SweetAlert2.
 - [ ] **Sistema de booking** para inscribirse a actividades y talleres.
-- [ ] **Más fotos reales de la huerta** en la galería.
+- [ ] **Más fotos reales de la huerta** en la galería (ya hay algunas).
 - [ ] **Blog dinámico** con sistema de administración de entradas.
 - [ ] **Modo oscuro** 🌙.
 - [ ] **Multilingüe** (español / inglés).
-- [ ] **SEO y accesibilidad** avanzada (metas de SEO por página, auditoría ARIA).
+- [ ] **SEO y accesibilidad avanzada** (metas de SEO por página, auditoría ARIA ampliada).
 
 ---
 
@@ -87,7 +90,7 @@ La aplicación está desplegada en **GitHub Pages**:
 
 ## 🏗️ Cómo correrlo localmente
 
-Como es un sitio estático, solo tienes que abrirlo en el navegador:
+Como es un sitio estático, puedes abrirlo en el navegador. **Ojo:** el formulario de contacto solo envía por HTTP/HTTPS, así que no lo pruebes con `file://` (doble clic); usa un servidor local:
 
 ```bash
 # Clonar el repositorio
@@ -96,8 +99,11 @@ git clone https://github.com/CarolPinerosTrujillo/HuertaComunitaria.git
 # Entrar a la carpeta
 cd HuertaComunitaria
 
-# Abrir el index (doble clic o con tu editor)
-# Si usas VS Code, puedes lanzar Live Server
+# Opción 1: servidor local con Python
+python -m http.server 8000
+# Luego abre http://localhost:8000
+
+# Opción 2: con VS Code, abrir la carpeta y lanzar Live Server
 ```
 
 ---

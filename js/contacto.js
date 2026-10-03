@@ -30,8 +30,18 @@
       .trim();
   }
 
+  function mostrarAlerta(opciones) {
+    if (typeof Swal !== 'undefined') {
+      Swal.fire(opciones);
+    } else if (typeof window.alert === 'function') {
+      window.alert(opciones.title + '\n\n' + (opciones.text || ''));
+    } else if (typeof console !== 'undefined') {
+      console.warn('[contacto.js] SweetAlert2 no cargó:', opciones);
+    }
+  }
+
   function errorEn(campo, texto) {
-    Swal.fire({
+    mostrarAlerta({
       icon: 'warning',
       title: 'Revisa el formulario',
       text: texto,
@@ -64,7 +74,7 @@
 
   function terminarMostrarExito() {
     FORM.reset();
-    Swal.fire({
+    mostrarAlerta({
       icon: 'success',
       title: '¡Mensaje enviado!',
       text: 'Gracias por escribirnos. Te responderemos pronto.',
@@ -73,7 +83,7 @@
   }
 
   function terminarMostrarError() {
-    Swal.fire({
+    mostrarAlerta({
       icon: 'error',
       title: 'No pudimos enviar tu mensaje',
       text: 'Intenta de nuevo en unos minutos o escríbenos a ' + CORREO_VISIBLE + '.',
@@ -99,6 +109,7 @@
     if (!validar()) { return; }
 
     var payload = {
+      _captcha: 'false',
       _subject: 'Mensaje del sitio web · Huerta de Hayuelos',
       nombre: sanear(campos.nombre.value),
       correo: sanear(campos.correo.value),
@@ -122,7 +133,7 @@
     })
       .then(function (respuesta) { return respuesta.json(); })
       .then(function (datos) {
-        ok = datos && datos.success === 'true';
+        ok = datos && (datos.success === 'true' || datos.success === true);
         if (ok) {
           terminarMostrarExito();
         } else {
