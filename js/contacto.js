@@ -15,7 +15,7 @@
   var btn = document.getElementById('btnEnviar');
   var textoOriginal = btn.textContent;
 
-  var CORREO_VISIBLE = 'huertahayuelo2025s@gmail.com';
+  var CORREO_VISIBLE = 'huertahayuelos2025@gmail.com';
   var ENDPOINT = 'https://formsubmit.co/ajax/caroll25m@gmail.com';
 
   var RE_NOMBRE = /^[A-Za-zÁÉÍÓÚáéíóúÑñÜü][A-Za-zÁÉÍÓÚáéíóúÑñÜü\s.'-]{1,99}$/;
@@ -82,11 +82,18 @@
     });
   }
 
-  function terminarMostrarError() {
+  function terminarMostrarError(motivo) {
+    var texto = 'Intenta de nuevo en unos minutos o escríbenos a ' + CORREO_VISIBLE + '.';
+    if (typeof motivo === 'string' && motivo) {
+      var motivoLimpio = motivo.replace(/[\u0000-\u001F\u007F]/g, '').slice(0, 120);
+      if (motivoLimpio) {
+        texto = 'Motivo: ' + motivoLimpio + '\n\n' + texto;
+      }
+    }
     mostrarAlerta({
       icon: 'error',
       title: 'No pudimos enviar tu mensaje',
-      text: 'Intenta de nuevo en unos minutos o escríbenos a ' + CORREO_VISIBLE + '.',
+      text: texto,
       confirmButtonText: 'Cerrar'
     });
   }
@@ -124,23 +131,29 @@
 
     var ok = false;
     fetch(ENDPOINT, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify(payload)
-    })
-      .then(function (respuesta) { return respuesta.json(); })
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(function (respuesta) {
+        return respuesta.json().then(function (datos) {
+          console.log('[contacto.js] FormSubmit - estado ' + respuesta.status, datos);
+          return datos;
+        });
+      })
       .then(function (datos) {
         ok = datos && (datos.success === 'true' || datos.success === true);
         if (ok) {
           terminarMostrarExito();
         } else {
-          terminarMostrarError();
+          terminarMostrarError(datos && datos.message);
         }
       })
-      .catch(function () {
+      .catch(function (error) {
+        console.warn('[contacto.js] Error de red o de parseo', error);
         terminarMostrarError();
       })
       .finally(function () {
