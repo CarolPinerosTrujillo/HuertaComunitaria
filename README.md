@@ -21,7 +21,7 @@
 
 Este es el sitio web de la **Huerta Comunitaria de Hayuelos**, un **proyecto social** donde un grupo de vecinos se une con un propósito compartido: **tratar sus residuos, recuperar el suelo y aprovecharlos para cuidar la tierra**.
 
-Fomentamos el **compostaje**, el **uso responsable de los recursos** y el **aprendizaje conjunto** sobre agricultura y huertas comunitarias. La página es el escaparate digital de este movimiento: presenta quiénes somos, qué hacemos, nuestras actividades, una galería de momentos, un blog y un formulario para unirse.
+Fomentamos el **compostaje**, el **uso responsable de los recursos** y el **aprendizaje conjunto** sobre agricultura y huertas comunitarias. La página es el escaparate digital de este movimiento: presenta quiénes somos, qué hacemos, nuestras actividades, una galería de momentos, una guía interactiva de compostaje paso a paso, un blog y un formulario para unirse.
 
 > 💛 *No solo cultivamos alimentos... cultivamos comunidad.*
 
@@ -34,6 +34,7 @@ Fomentamos el **compostaje**, el **uso responsable de los recursos** y el **apre
 | 🏠 **Inicio** | Landing con hero, ¿qué hacemos?, sobre nosotros, galería, preguntas frecuentes y mapa |
 | 🌾 **Actividades** | Jornadas de siembra, talleres, cosechas y calendario de la huerta |
 | 📸 **Galería** | Fotos y emoticones que retratan la vida de la huerta |
+| 🧫 **Compostaje** | Guía interactiva: infografía con burbujas por paso que abren cada imagen en grande |
 | 📝 **Blog** | Historias y aprendizajes de la comunidad |
 | ✉️ **Contacto** | Formulario para unirse y participar |
 | 💛 **Únete** | Llamado a la acción para sumarse al proyecto |
@@ -45,8 +46,9 @@ Fomentamos el **compostaje**, el **uso responsable de los recursos** y el **apre
 - **HTML5** — estructura semántica de las páginas
 - **CSS3** — estilos, paleta de colores y diseño responsive
 - **Bootstrap 5.3** — componentes (navbar, cards, carousel, accordion, tablas, formularios)
-- **JavaScript** — interactividad de los componentes de Bootstrap
+- **JavaScript** — componentes de Bootstrap e interactividad de la guía de compostaje (hotspots y modales)
 - **Google Fonts** — tipografías *Edu VIC WA NT Hand* (títulos) y *Quicksand* (texto)
+- **WebP** — imágenes optimizadas (infografías, pasos y fotos de la galería)
 - **Flaticon** — emoticones e iconos de la sección "¿Qué hacemos?"
 - **Google Maps Embed** — mapa de ubicación en el footer
 
@@ -67,11 +69,11 @@ Pensamos en los colores de la tierra:
 
 - [ ] **Backend del formulario de contacto** — actualmente es solo visual; conectar con un servicio de correo/WhatsApp.
 - [ ] **Sistema de booking** para inscribirse a actividades y talleres.
-- [ ] **Repositorio de imágenes reales de la huerta** (actualmente se usan fotos genéricas y emoticones).
+- [ ] **Más fotos reales de la huerta** en la galería.
 - [ ] **Blog dinámico** con sistema de administración de entradas.
 - [ ] **Modo oscuro** 🌙.
 - [ ] **Multilingüe** (español / inglés).
-- [ ] **SEO y accesibilidad** avanzada (etiquetas meta, ARIA, optimización de imágenes).
+- [ ] **SEO y accesibilidad** avanzada (metas de SEO por página, auditoría ARIA).
 
 ---
 
