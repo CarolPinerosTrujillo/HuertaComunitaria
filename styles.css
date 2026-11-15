@@ -1322,6 +1322,110 @@ footer .footer-mapa iframe {
 }
 
 /* ==============================
+   CASA DE MATERIALES
+   ============================== */
+.casa-materiales {
+  background: linear-gradient(180deg, var(--verde-100) 0%, #f7fbf4 100%);
+}
+
+.casa-materiales-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 1.75rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--blanco);
+  border: 2px solid rgba(63, 107, 54, 0.18);
+  border-radius: 24px;
+  padding: 2.25rem 2.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.casa-materiales-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--verde-100);
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.casa-materiales-etiqueta {
+  display: inline-block;
+  background: var(--verde-100);
+  color: var(--verde-700);
+  border-radius: 20px;
+  padding: 5px 13px;
+  margin-bottom: 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.casa-materiales-texto h2 {
+  font-family: 'Edu VIC WA NT Hand', cursive;
+  color: var(--cafe);
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.casa-materiales-texto p {
+  color: var(--gris-texto);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.casa-materiales-texto p strong {
+  color: var(--cafe-oscuro);
+}
+
+.casa-materiales-nota {
+  color: var(--verde-700) !important;
+  font-weight: 600;
+}
+
+.casa-materiales-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 767.98px) {
+  .casa-materiales-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.75rem 1.35rem;
+    text-align: center;
+  }
+
+  .casa-materiales-icono {
+    margin: 0 auto;
+  }
+
+  .casa-materiales-texto h2 {
+    font-size: 1.7rem;
+  }
+
+  .casa-materiales-acciones {
+    justify-content: center;
+  }
+
+  .casa-materiales-acciones .btn-huerta,
+  .casa-materiales-acciones .btn-outline-huerta {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==============================
    PRÓXIMO EVENTO
    ============================== */
 .evento-section {
@@ -1584,6 +1688,39 @@ footer .footer-mapa iframe {
   margin-bottom: 1.25rem !important;
 }
 
+.impacto-nota {
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 0.9rem !important;
+  line-height: 1.6;
+  border-left: 3px solid rgba(245, 179, 1, 0.65);
+  padding-left: 0.9rem;
+  margin-bottom: 1.25rem !important;
+}
+
+.btn-registro {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--blanco);
+  color: var(--verde-oscuro) !important;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.btn-registro:hover,
+.btn-registro:focus-visible {
+  background: var(--amarillo);
+  color: var(--cafe-oscuro) !important;
+  transform: translateY(-2px);
+}
+
+.btn-registro:focus-visible {
+  outline: 3px solid var(--amarillo);
+  outline-offset: 2px;
+}
+
 .impacto-acciones {
   display: flex;
   flex-wrap: wrap;
@@ -1718,6 +1855,7 @@ footer .footer-mapa iframe {
 
   .evento-acciones .btn-huerta,
   .evento-acciones .btn-outline-huerta,
+  .impacto-acciones .btn-registro,
   .impacto-acciones .btn-huerta,
   .impacto-acciones .btn-outline-claro {
     width: 100%;
