@@ -300,150 +300,88 @@ img {
   opacity: 0.96;
 }
 
-/* Aviso de los jueves dentro del hero */
-.hero-jueves {
+.hero-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.hero-jueves-linea {
+  margin: 1.75rem 0 0 !important;
+  font-size: 0.95rem !important;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.hero-jueves-linea a {
+  color: var(--blanco);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero-jueves-linea a:hover,
+.hero-jueves-linea a:focus-visible {
+  color: var(--amarillo);
+}
+
+/* AVISO DE LA SEMANA (franja temporal bajo el hero) */
+.aviso-banda {
+  background: linear-gradient(135deg, #fff8e3 0%, #ffe9a8 100%);
+  border-bottom: 3px solid var(--amarillo-oscuro);
+}
+
+.aviso-banda-inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1.75rem;
-  padding: 1.1rem 1.25rem;
-  text-align: left;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.32);
-  border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  gap: 0.75rem 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.hero-jueves-icon {
-  flex-shrink: 0;
-  font-size: 2.1rem;
-  line-height: 1;
-  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
-}
-
-.hero-jueves-texto {
-  flex: 1 1 260px;
-}
-
-.hero-jueves-texto h2 {
-  color: var(--blanco);
-  font-size: 1.35rem;
-  margin-bottom: 0.25rem;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-}
-
-.hero-jueves-texto p {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 0.9rem;
+.aviso-banda-texto {
+  margin: 0;
+  color: var(--cafe-oscuro);
+  font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 0.2rem;
-  opacity: 1;
 }
 
-.hero-jueves-nota {
-  color: #fdf0c4 !important;
-  font-size: 0.82rem !important;
-  font-weight: 600;
-}
-
-/* Aviso destacado dentro del hero (temporal) */
-.hero-aviso {
-  max-width: 660px;
-  margin: 0 auto 1.75rem;
-  padding: 1rem 1.25rem 1.15rem;
-  text-align: left;
-  background: linear-gradient(135deg, #fff8e3 0%, #ffe9a8 100%);
-  border: 2px solid rgba(245, 179, 1, 0.85);
-  border-left: 8px solid var(--amarillo-oscuro);
-  border-radius: 16px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
-}
-
-.hero-aviso-etiqueta {
+.aviso-banda-etiqueta {
   display: inline-block;
-  margin-bottom: 0.6rem;
-  padding: 4px 14px;
+  margin-right: 0.6rem;
+  padding: 3px 12px;
   border-radius: 999px;
   background: var(--cafe);
   color: var(--blanco);
-  font-family: 'Quicksand', sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
-.hero-content .hero-aviso-linea {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--cafe-oscuro) !important;
-  opacity: 1;
-}
-
-.hero-content .hero-aviso-linea + .hero-aviso-linea {
-  margin-top: 0.35rem;
-}
-
-.hero-content .hero-aviso-linea--cancelada {
-  color: #6b5a44 !important;
-}
-
-.hero-content .hero-aviso-linea--destacada {
-  font-weight: 600;
-}
-
-.hero-content .hero-aviso-linea--destacada strong {
+.aviso-banda-texto strong {
   color: var(--verde-700);
 }
 
-.hero-content .hero-aviso-linea--contacto {
-  font-size: 0.92rem;
-  font-weight: 600;
-}
-
-.hero-content .hero-aviso-linea--contacto a {
-  color: var(--verde-700);
+.aviso-banda-contacto {
+  flex-shrink: 0;
+  color: var(--cafe);
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.hero-content .hero-aviso-linea--contacto a:hover,
-.hero-content .hero-aviso-linea--contacto a:focus-visible {
-  color: var(--cafe);
+.aviso-banda-contacto:hover,
+.aviso-banda-contacto:focus-visible {
+  color: var(--verde-700);
 }
 
-@media (max-width: 576px) {
-  .hero-aviso {
-    padding: 0.9rem 1rem 1rem;
-    margin-bottom: 1.35rem;
-  }
-
-  .hero-content .hero-aviso-linea {
+@media (max-width: 575.98px) {
+  .aviso-banda-texto {
     font-size: 0.92rem;
   }
-}
-
-.btn-verde {
-  flex-shrink: 0;
-  background: var(--blanco);
-  border-radius: 25px;
-  padding: 11px 24px;
-  color: var(--verde-700);
-  font-weight: 700;
-  white-space: nowrap;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.btn-verde:hover {
-  background: var(--amarillo);
-  color: var(--cafe-oscuro);
-  transform: translateY(-2px);
 }
 
 /* ==============================
@@ -1916,27 +1854,7 @@ footer .footer-mapa iframe {
   }
 }
 
-@media (max-width: 767.98px) {
-  .hero-jueves {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-jueves-texto h2 {
-    font-size: 1.2rem;
-  }
-
-  .hero-jueves .btn-verde {
-    width: 100%;
-    text-align: center;
-  }
-}
-
 @media (max-width: 575.98px) {
-  .hero-jueves {
-    padding: 1rem;
-  }
-
   .evento-imagen img {
     min-height: 230px;
   }
