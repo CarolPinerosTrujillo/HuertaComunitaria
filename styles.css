@@ -401,6 +401,23 @@ img {
   color: var(--verde-700);
 }
 
+.hero-content .hero-aviso-linea--contacto {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.hero-content .hero-aviso-linea--contacto a {
+  color: var(--verde-700);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.hero-content .hero-aviso-linea--contacto a:hover,
+.hero-content .hero-aviso-linea--contacto a:focus-visible {
+  color: var(--cafe);
+}
+
 @media (max-width: 576px) {
   .hero-aviso {
     padding: 0.9rem 1rem 1rem;
@@ -478,6 +495,30 @@ img {
   box-shadow: 0 6px 18px rgba(78, 52, 46, 0.4);
 }
 
+.btn-whatsapp {
+  display: inline-block;
+  max-width: 100%;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #ffffff !important;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 28px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(18, 140, 126, 0.3);
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus-visible {
+  background: linear-gradient(135deg, #128c7e, #075e54);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(7, 94, 84, 0.35);
+}
+
 /* ==============================
    CARDS / TARJETAS
    ============================== */
@@ -523,6 +564,42 @@ img {
   color: var(--gris-texto);
   font-size: 0.95rem;
   line-height: 1.65;
+}
+
+.card-text.card-contacto {
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card-text.card-contacto a {
+  color: var(--verde-700);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.card-text.card-contacto a:hover,
+.card-text.card-contacto a:focus-visible {
+  color: var(--cafe);
+}
+
+.contacto-whatsapp {
+  margin-top: 1.25rem;
+  color: var(--gris-texto);
+  font-size: 0.95rem;
+}
+
+.contacto-whatsapp a {
+  color: var(--verde-700);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.contacto-whatsapp a:hover,
+.contacto-whatsapp a:focus-visible {
+  color: var(--cafe);
 }
 
 /* ==============================
@@ -1418,6 +1495,7 @@ footer .footer-mapa iframe {
     justify-content: center;
   }
 
+  .casa-materiales-acciones .btn-whatsapp,
   .casa-materiales-acciones .btn-huerta,
   .casa-materiales-acciones .btn-outline-huerta {
     width: 100%;
@@ -1570,6 +1648,24 @@ footer .footer-mapa iframe {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1.75rem;
+}
+
+.evento-contacto {
+  margin-top: 1rem;
+  color: var(--gris-texto);
+  font-size: 0.95rem;
+}
+
+.evento-contacto a {
+  color: var(--verde-700);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.evento-contacto a:hover,
+.evento-contacto a:focus-visible {
+  color: var(--cafe);
 }
 
 .btn-outline-huerta {
