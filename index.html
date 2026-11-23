@@ -60,36 +60,47 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <img class="hero-bg" src="img/huerta.webp" alt="Vista de la huerta comunitaria">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Cultivando comunidad, cosechando vida</h1>
-
-      <p>Somos vecinos de Hayuelos que recuperamos el suelo y cultivamos juntos.</p>
-
-      <div class="hero-acciones">
-        <a href="./contacto.html" class="btn-huerta">Únete a la comunidad</a>
-        <a href="https://wa.me/573189890692" target="_blank" rel="noopener" class="btn-whatsapp">💬 WhatsApp</a>
+  <!-- HERO: PRIMICIA DE LA MINGA DEL COBERTIZO -->
+  <section class="hero-minga" id="inicio">
+    <div class="container">
+      <div class="hero-minga-grid">
+        <div class="hero-minga-flyer">
+          <span class="hero-minga-badge">✨ Primicia</span>
+          <img src="img/eventos/huertaflyer29noviembre.jpeg" alt="Flyer de la aMinga Huertera del 29 de noviembre">
+          <button type="button" class="btn-minga-ampliar" data-bs-toggle="modal" data-bs-target="#modalFlyer">
+            🔍 Ampliar flyer
+          </button>
+        </div>
+        <div class="hero-minga-contenido">
+          <span class="hero-minga-etiqueta">Domingo 29 de noviembre</span>
+          <h1>Construyamos juntos el cobertizo de la Huerta</h1>
+          <p class="hero-minga-frase">
+            Manos, herramientas, materiales y aportes: todo suma para estrenar nuestro techo en diciembre.
+          </p>
+          <div class="hero-minga-acciones">
+            <a href="https://wa.me/573189890692?text=quiero%20ser%20parte%20de%20la%20huerta%20hayuelos%20y%20colaborar"
+              target="_blank" rel="noopener" class="btn-whatsapp">Quiero aportar con mis residuos</a>
+          </div>
+          <p class="hero-minga-enlace"><a href="#proximo-evento">Ver cómo ayudar →</a></p>
+        </div>
       </div>
-
-      <p class="hero-jueves-linea">
-        <a href="./compostaje.html">♻️ Cada jueves en la huerta · Ver menú de compostaje →</a>
-      </p>
     </div>
   </section>
 
-  <!-- TEMPORAL: aviso de la semana del 19 de noviembre -->
-  <section class="aviso-banda" aria-label="Aviso de la semana">
-    <div class="container aviso-banda-inner">
-      <p class="aviso-banda-texto">
-        <span class="aviso-banda-etiqueta">📅 Aviso de la semana</span>
-        <strong>Jueves 19 de noviembre:</strong> recibimos residuos orgánicos y escuchamos aportes para la minga del
-        29 de noviembre.
-      </p>
-      <a class="aviso-banda-contacto" href="https://wa.me/573189890692" target="_blank" rel="noopener">📲 +57 318 989
-        0692</a>
+  <!-- BANNER: CADA JUEVES (invitación a sumarse como voluntario) -->
+  <section class="banner-jueves" aria-label="Cada jueves en la huerta">
+    <div class="container banner-jueves-inner">
+      <div class="banner-jueves-texto">
+        <span class="banner-jueves-etiqueta">♻️ Cada jueves</span>
+        <h2>Cada jueves hacemos huerta</h2>
+        <p>Trae tus residuos orgánicos, aprende a compostar y comparte con vecinos. Tu ayuda hace falta.</p>
+      </div>
+      <div class="banner-jueves-acciones">
+        <a href="https://wa.me/573189890692?text=quiero%20ir%20este%20jueves%20a%20la%20huerta%20hayuelos"
+          target="_blank" rel="noopener" class="btn-huerta">Voy este jueves</a>
+        <a href="./compostaje.html" class="btn-outline-claro">Ver menú de compostaje</a>
+        <span class="banner-jueves-contacto">📲 +57 318 989 0692</span>
+      </div>
     </div>
   </section>
 
@@ -101,14 +112,17 @@
         <div class="casa-materiales-texto">
           <span class="casa-materiales-etiqueta">Proyecto comunitario</span>
           <h2>Casa de materiales</h2>
-          <p>Quedan <strong>2 semanas</strong> para empezar a hacer realidad un espacio donde guardar los insumos
-            de la huerta.</p>
-          <p><strong>Súmate a las jornadas del jueves y domingo.</strong> Estamos pendientes de nuestras redes
-            sociales para compartirte el número de Nequi o la llave y sumar tu aporte a la vaca comunitaria.</p>
-          <p class="casa-materiales-nota">Cada aporte, grande o pequeño, se recibe con cariño.</p>
+          <p>Estamos reuniendo <strong>materiales y herramientas</strong> para hacer realidad el cobertizo de la
+            huerta.</p>
+          <p><strong>Consulta la lista</strong> de insumos pendientes y elige qué puedes aportar. Cada herramienta,
+            cada material y cada mano cuentan.</p>
+          <p class="casa-materiales-nota">💸 Aportes económicos: Nequi <strong>305 737 3118</strong> · Contacto:
+            Carol. Los recursos se destinan a completar la construcción.</p>
           <div class="casa-materiales-acciones">
+            <a href="https://docs.google.com/spreadsheets/d/12TrjOASCQGpgovpOBjgDYi5NBxSmuTYr/edit?usp=sharing&amp;ouid=111275847141605740762&amp;rtpof=true&amp;sd=true"
+              target="_blank" rel="noopener" class="btn-huerta">📋 Ver lista de materiales</a>
             <a href="https://wa.me/573189890692" target="_blank" rel="noopener" class="btn-whatsapp">💬 Escríbenos al WhatsApp</a>
-            <a href="./actividades.html" class="btn-huerta">Únete a las jornadas</a>
+            <a href="./actividades.html" class="btn-outline-huerta">Únete a las jornadas</a>
             <a href="https://www.instagram.com/huertahayuelos/?hl=es" target="_blank" rel="noopener"
               class="btn-outline-huerta">Seguir en Instagram</a>
           </div>
@@ -117,58 +131,67 @@
     </div>
   </section>
 
-  <!-- PRÓXIMO EVENTO -->
+  <!-- PRÓXIMO EVENTO: CONSTRUCCIÓN DEL COBERTIZO -->
   <section class="evento-section section-padding" id="proximo-evento">
     <div class="container">
       <div class="evento-destacado">
         <div class="evento-imagen">
-          <!-- TEMPORAL: reemplazar por la imagen definitiva del evento -->
-          <img src="img/minga-agosto/minga1.jpeg" alt="Jornada de minga en la huerta comunitaria">
-          <div class="evento-fecha-badge" aria-label="Domingo 29 de noviembre">
+          <img src="img/eventos/huertaflyer29noviembre.jpeg" alt="Flyer de la minga para construir el cobertizo">
+          <div class="evento-fecha-badge" aria-label="Domingo 29 de noviembre de 2026">
             <span class="evento-dia">29</span>
             <span class="evento-mes">NOV</span>
           </div>
         </div>
         <div class="evento-info">
-          <span class="evento-etiqueta">Próximo evento</span>
-          <h2>aMinga Huertera con Gente Huertera 🐌</h2>
-          <p class="evento-meta">📍 Huerta Comunitaria de Hayuelos · Domingo 29 de noviembre</p>
+          <span class="evento-etiqueta">Próximo evento · Primicia</span>
+          <h2>aMinga Huertera: construyamos el cobertizo 🐌</h2>
+          <p class="evento-meta">📍 Huerta Comunitaria de Hayuelos · Domingo 29 de noviembre de 2026</p>
           <p class="evento-intro">
-            Este domingo compartimos la jornada con la <strong>Huerta Alison</strong> 🐌: un encuentro para
-            preparar la huerta, intercambiar saberes y avanzar juntos en el cuidado del espacio.
+            La Huerta Hayuelos nos necesita. El <strong>domingo 29 de noviembre de 2026</strong> hacemos una minga
+            para construir nuestro <strong>cobertizo</strong>: un espacio para seguir cultivando, compartiendo y
+            fortaleciendo la huerta comunitaria.
           </p>
 
           <div class="row g-3">
             <div class="col-md-6">
               <div class="evento-bloque">
-                <h3>Esta semana</h3>
+                <h3>¿Cómo puedes ayudar?</h3>
                 <ul class="evento-lista">
-                  <li>Traer <strong>aceite de carro quemado</strong>. Se puede pedir en cada gasolinera o en los
-                    mantenimientos de carros que encontremos.</li>
-                  <li>Si aún están los materiales de la poda en la esquina, acordar un encuentro para seguir
-                    llevándolos.</li>
-                  <li>Cotización de algunos materiales.</li>
-                  <li><strong>Este jueves:</strong> quienes puedan venir a revisar y definir el diseño y las posibles
-                    labores para el día de la minga. Si no podemos el jueves, buscar un día del fin de semana.</li>
+                  <li><strong>Con tu trabajo:</strong> participa en la jornada de la minga.</li>
+                  <li><strong>Con herramientas:</strong> trae las que tengas y ponlas a disposición.</li>
+                  <li><strong>Con materiales:</strong> aporta alguno de los insumos pendientes para la construcción.</li>
+                  <li><strong>Con un aporte económico:</strong> cualquier contribución nos ayuda a completar las compras.</li>
                 </ul>
               </div>
             </div>
             <div class="col-md-6">
               <div class="evento-bloque">
-                <h3>Semana siguiente</h3>
+                <h3>Antes de la minga</h3>
                 <ul class="evento-lista">
-                  <li>Seguimos viendo avances y hacemos <strong>minga de preparación</strong>.</li>
-                  <li>Limpieza del espacio.</li>
-                  <li>Acopio de materiales.</li>
-                  <li>Organización de las labores para el día de la minga.</li>
+                  <li><strong>Martes 24 de noviembre:</strong> nos reunimos para revisar el diseño y definir las
+                    labores de la minga.</li>
+                  <li><strong>Jueves 26 de noviembre:</strong> limpieza del espacio, acopio de materiales y
+                    herramientas.</li>
+                  <li><strong>Domingo 29 de noviembre:</strong> trabajamos juntos en la construcción del cobertizo.</li>
+                  <li><strong>Nuestra meta:</strong> estrenar nuestro techo y nuestra casita nueva en diciembre. 🌱</li>
                 </ul>
               </div>
             </div>
           </div>
 
+          <div class="evento-aporte">
+            <h3>💸 Aportes económicos</h3>
+            <p><strong>Nequi · llave/número: 305 737 3118</strong> · Contacto: Carol</p>
+            <p>Los recursos reunidos se destinan a comprar los materiales que hagan falta para terminar la
+              construcción.</p>
+          </div>
+
           <div class="evento-acciones">
-            <a href="./contacto.html" class="btn-huerta">Quiero participar</a>
-            <a href="./actividades.html" class="btn-outline-huerta">Ver todas las actividades</a>
+            <a href="https://wa.me/573189890692?text=quiero%20ser%20parte%20de%20la%20huerta%20hayuelos%20y%20colaborar"
+              target="_blank" rel="noopener" class="btn-whatsapp">Quiero ser voluntario</a>
+            <a href="https://docs.google.com/spreadsheets/d/12TrjOASCQGpgovpOBjgDYi5NBxSmuTYr/edit?usp=sharing&amp;ouid=111275847141605740762&amp;rtpof=true&amp;sd=true"
+              target="_blank" rel="noopener" class="btn-huerta">📋 Ver lista de materiales</a>
+            <a href="./actividades.html" class="btn-outline-huerta">Ver calendario</a>
           </div>
           <p class="evento-contacto">📲 ¿Dudas? Escríbenos al
             <a href="https://wa.me/573189890692" target="_blank" rel="noopener">WhatsApp +57 318 989 0692</a>
@@ -184,7 +207,7 @@
       <div class="impacto-card">
         <div class="impacto-contenido">
           <span class="impacto-etiqueta">Nuestro impacto</span>
-          <h2><span class="impacto-cifra">73 kg</span> de residuos orgánicos recibidos hasta la fecha</h2>
+          <h2><span class="impacto-cifra">82,15 kg</span> de residuos orgánicos recibidos hasta hoy</h2>
           <p>
             Empezamos a medir nuestro impacto. Entre vecinos y vecinas reunimos estos residuos orgánicos que hoy se
             transforman en abono para la huerta.
@@ -204,7 +227,7 @@
         </div>
         <div class="impacto-visual" aria-hidden="true">
           <div class="impacto-circulo">
-            <span class="impacto-numero">73</span>
+            <span class="impacto-numero impacto-numero--largo">82,15</span>
             <span class="impacto-unidad">kg</span>
           </div>
         </div>
@@ -607,6 +630,21 @@
       <span class="footer-credit">Iconos de <a href="https://www.flaticon.es/" target="_blank" rel="noopener">Flaticon</a></span>
     </div>
   </footer>
+
+  <!-- MODAL: FLYER AMPLIADO DE LA MINGA -->
+  <div class="modal fade" id="modalFlyer" tabindex="-1" aria-labelledby="modalFlyerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFlyerLabel">aMinga Huertera · 29 de noviembre</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="img/eventos/huertaflyer29noviembre.jpeg" class="img-fluid" alt="Flyer ampliado de la minga del cobertizo">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

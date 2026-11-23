@@ -300,87 +300,228 @@ img {
   opacity: 0.96;
 }
 
-.hero-acciones {
+/* ==============================
+   HERO: PRIMICIA DEL COBERTIZO
+   ============================== */
+.hero-minga {
+  background: linear-gradient(180deg, var(--crema) 0%, #f7fbf4 100%);
+  padding: 3.5rem 0;
+}
+
+.hero-minga-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-minga-flyer {
+  position: relative;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.hero-minga-flyer img {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(78, 52, 46, 0.25);
+}
+
+.hero-minga-badge {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  z-index: 2;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--amarillo), var(--amarillo-oscuro));
+  color: var(--cafe-oscuro);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-minga-ampliar {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 10px 18px;
+  border: 2px solid var(--verde-700);
+  border-radius: 25px;
+  background: var(--blanco);
+  color: var(--verde-700);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-minga-ampliar:hover,
+.btn-minga-ampliar:focus-visible {
+  background: var(--verde-700);
+  color: var(--blanco);
+}
+
+.hero-minga-etiqueta {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--verde-700);
+  color: var(--blanco);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.hero-minga-contenido h1 {
+  font-family: 'Edu VIC WA NT Hand', cursive;
+  color: var(--cafe-oscuro);
+  font-size: 2.9rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.hero-minga-frase {
+  color: var(--gris-texto);
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.hero-minga-acciones {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 0.75rem;
 }
 
-.hero-jueves-linea {
-  margin: 1.75rem 0 0 !important;
-  font-size: 0.95rem !important;
-  font-weight: 600;
-  opacity: 0.95;
+.hero-minga-enlace {
+  margin: 1.25rem 0 0 !important;
 }
 
-.hero-jueves-linea a {
-  color: var(--blanco);
+.hero-minga-enlace a {
+  color: var(--verde-700);
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.hero-jueves-linea a:hover,
-.hero-jueves-linea a:focus-visible {
-  color: var(--amarillo);
+/* ==============================
+   BANNER: CADA JUEVES
+   ============================== */
+.banner-jueves {
+  position: relative;
+  background-image: linear-gradient(135deg, rgba(52, 78, 46, 0.88), rgba(146, 189, 141, 0.8)),
+    url('img/huerta.webp');
+  background-size: cover;
+  background-position: center;
+  color: var(--blanco);
 }
 
-/* AVISO DE LA SEMANA (franja temporal bajo el hero) */
-.aviso-banda {
-  background: linear-gradient(135deg, #fff8e3 0%, #ffe9a8 100%);
-  border-bottom: 3px solid var(--amarillo-oscuro);
-}
-
-.aviso-banda-inner {
+.banner-jueves-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 0.75rem 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.aviso-banda-texto {
-  margin: 0;
-  color: var(--cafe-oscuro);
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.aviso-banda-etiqueta {
+.banner-jueves-etiqueta {
   display: inline-block;
-  margin-right: 0.6rem;
-  padding: 3px 12px;
+  margin-bottom: 0.4rem;
+  padding: 4px 14px;
   border-radius: 999px;
-  background: var(--cafe);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.45);
   color: var(--blanco);
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
 }
 
-.aviso-banda-texto strong {
-  color: var(--verde-700);
+.banner-jueves-texto h2 {
+  color: var(--blanco);
+  font-family: 'Edu VIC WA NT Hand', cursive;
+  font-size: 2rem;
+  margin: 0 0 0.35rem;
 }
 
-.aviso-banda-contacto {
-  flex-shrink: 0;
-  color: var(--cafe);
+.banner-jueves-texto p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.98rem;
+  margin: 0;
+  opacity: 1;
+}
+
+.banner-jueves-acciones {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.banner-jueves-contacto {
+  color: var(--blanco);
   font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  white-space: nowrap;
 }
 
-.aviso-banda-contacto:hover,
-.aviso-banda-contacto:focus-visible {
-  color: var(--verde-700);
+@media (max-width: 991.98px) {
+  .hero-minga-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-minga-flyer {
+    max-width: 320px;
+  }
+
+  .hero-minga-contenido h1 {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 575.98px) {
-  .aviso-banda-texto {
-    font-size: 0.92rem;
+  .hero-minga {
+    padding: 2.5rem 0;
+  }
+
+  .hero-minga-flyer {
+    max-width: 260px;
+  }
+
+  .hero-minga-contenido h1 {
+    font-size: 1.85rem;
+  }
+
+  .hero-minga-frase {
+    font-size: 1rem;
+  }
+
+  .hero-minga-acciones .btn-whatsapp,
+  .banner-jueves-acciones .btn-huerta,
+  .banner-jueves-acciones .btn-outline-claro {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner-jueves-texto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner-jueves-acciones {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .banner-jueves-texto h2 {
+    font-size: 1.65rem;
   }
 }
 
@@ -1471,6 +1612,13 @@ footer .footer-mapa iframe {
   object-fit: cover;
 }
 
+/* El flyer es vertical: se muestra completo en la tarjeta del evento */
+.card-img-flyer {
+  object-fit: contain;
+  background: #fdf6ea;
+  max-height: 280px;
+}
+
 .evento-fecha-badge {
   position: absolute;
   top: 1.2rem;
@@ -1578,6 +1726,33 @@ footer .footer-mapa iframe {
 }
 
 .evento-lista li:last-child {
+  margin-bottom: 0;
+}
+
+.evento-aporte {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  background: var(--crema);
+  border: 2px solid var(--amarillo);
+  border-left: 6px solid var(--amarillo-oscuro);
+  border-radius: 14px;
+}
+
+.evento-aporte h3 {
+  color: var(--cafe-oscuro);
+  font-family: 'Edu VIC WA NT Hand', cursive;
+  font-size: 1.35rem;
+  margin-bottom: 0.4rem;
+}
+
+.evento-aporte p {
+  color: var(--cafe-oscuro);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+.evento-aporte p:last-child {
   margin-bottom: 0;
 }
 
@@ -1806,6 +1981,11 @@ footer .footer-mapa iframe {
   line-height: 1;
 }
 
+.impacto-numero--largo {
+  font-size: 3.1rem;
+  letter-spacing: -1px;
+}
+
 .impacto-unidad {
   margin-top: 0.35rem;
   font-size: 1.15rem;
@@ -1867,6 +2047,7 @@ footer .footer-mapa iframe {
     font-size: 1.65rem;
   }
 
+  .evento-acciones .btn-whatsapp,
   .evento-acciones .btn-huerta,
   .evento-acciones .btn-outline-huerta,
   .impacto-acciones .btn-registro,
@@ -1895,6 +2076,10 @@ footer .footer-mapa iframe {
 
   .impacto-numero {
     font-size: 3.2rem;
+  }
+
+  .impacto-numero--largo {
+    font-size: 2.4rem;
   }
 }
 
