@@ -140,11 +140,12 @@ img {
   background-color: var(--blanco) !important;
   background-image: none !important;
   box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-  padding: 0.8rem 1.5rem;
+  padding: 0.45rem 1.5rem;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   border-bottom: 1px solid #ece0cc;
   z-index: 1030;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .navbar.sticky-top {
@@ -153,14 +154,72 @@ img {
   width: 100%;
 }
 
+/* --- Al recorrer la página: barra translúcida que deja ver el contenido --- */
+.navbar.navbar-transparente {
+  background-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: none;
+  border-bottom-color: transparent;
+  backdrop-filter: blur(3px) !important;
+  -webkit-backdrop-filter: blur(3px) !important;
+}
+
+.navbar.navbar-transparente .navbar-brand img {
+  opacity: 0.9;
+}
+
+/* --- Con mouse: las opciones aparecen al pasar el cursor por la barra --- */
+@media (hover: hover) and (min-width: 992px) {
+  .navbar.navbar-transparente .navbar-collapse,
+  .navbar.navbar-transparente .navbar-brand .brand-text {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+
+  .navbar.navbar-transparente:hover,
+  .navbar.navbar-transparente:focus-within {
+    background-color: var(--blanco) !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    border-bottom-color: #ece0cc;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  .navbar.navbar-transparente:hover .navbar-collapse,
+  .navbar.navbar-transparente:focus-within .navbar-collapse,
+  .navbar.navbar-transparente:hover .navbar-brand .brand-text,
+  .navbar.navbar-transparente:focus-within .navbar-brand .brand-text {
+    opacity: 1;
+  }
+}
+
+/* --- Con el menú abierto (móvil): barra sólida y totalmente legible --- */
+.navbar.menu-abierto,
+.navbar.navbar-transparente.menu-abierto,
+.navbar.navbar-transparente.menu-abierto:hover {
+  background-color: var(--blanco) !important;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+  border-bottom-color: #ece0cc;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.navbar.menu-abierto .navbar-collapse {
+  opacity: 1 !important;
+}
+
+/* Evita que los anclas queden tapados por la navbar fija */
+[id] {
+  scroll-margin-top: 78px;
+}
+
 .navbar-brand {
   font-family: 'Edu VIC WA NT Hand', cursive;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--cafe) !important;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 9px;
   line-height: 1.1;
   margin-right: 1rem;
 }
@@ -171,8 +230,8 @@ img {
 }
 
 .navbar-brand img {
-  height: 46px;
-  width: 46px;
+  height: 38px;
+  width: 38px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -181,8 +240,8 @@ img {
 .navbar-nav .nav-link {
   color: var(--cafe-oscuro) !important;
   font-weight: 600;
-  font-size: 0.92rem;
-  padding: 0.5rem 1rem !important;
+  font-size: 0.88rem;
+  padding: 0.4rem 0.85rem !important;
   border-radius: 20px;
   transition: all 0.3s ease;
 }
@@ -201,9 +260,9 @@ img {
   background: linear-gradient(135deg, var(--amarillo), var(--cafe));
   color: var(--blanco) !important;
   border-radius: 25px;
-  padding: 8px 22px;
+  padding: 6px 18px;
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -1008,7 +1067,7 @@ footer .footer-mapa iframe {
 /* --- Navbar en móvil/tablet (< 992px: menú colapsado) --- */
 @media (max-width: 991.98px) {
   .navbar {
-    padding: 0.6rem 1rem;
+    padding: 0.35rem 1rem;
   }
 
   .navbar-brand {
@@ -1016,21 +1075,33 @@ footer .footer-mapa iframe {
   }
 
   .navbar-brand .brand-text {
-    font-size: 1rem;
+    font-size: 0.92rem;
   }
 
   .navbar-brand img {
-    height: 40px;
-    width: 40px;
+    height: 34px;
+    width: 34px;
+  }
+
+  /* En móvil no hay hover: se mantiene translúcida pero legible. */
+  .navbar.navbar-transparente {
+    background-color: rgba(255, 255, 255, 0.86) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  }
+
+  [id] {
+    scroll-margin-top: 66px;
   }
 
   .navbar-collapse {
-    padding: 0.5rem 0 0.75rem;
+    padding: 0.4rem 0 0.5rem;
   }
 
   .navbar-nav .nav-link {
-    padding: 0.8rem 1rem !important;
-    font-size: 1rem;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95rem;
     border-radius: 12px;
   }
 }
@@ -1190,16 +1261,16 @@ footer .footer-mapa iframe {
 
 @media (max-width: 380px) {
   .navbar {
-    padding: 0.5rem 0.75rem;
+    padding: 0.3rem 0.75rem;
   }
 
   .navbar-brand .brand-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .navbar-brand img {
-    height: 36px;
-    width: 36px;
+    height: 32px;
+    width: 32px;
   }
 
   .hero-content h1 {
@@ -2098,8 +2169,8 @@ footer .footer-mapa iframe {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   flex-shrink: 0;
   border-radius: 50%;
   color: var(--blanco) !important;
